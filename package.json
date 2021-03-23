@@ -1,11 +1,7 @@
 {
   "scripts": {
-    "compile5": "hardhat typechain --config hardhat.config.ts",
-    "compile6": "hardhat typechain --config hardhat.config.6.ts",
-    "compile": "hardhat typechain --config hardhat.config.ts && hardhat typechain --config hardhat.config.6.ts",
+    "compile": "hardhat typechain --config hardhat.config.ts",
     "test:mstable": "buidler test ./test/MStableBank.test.ts",
-    "test:sushi": "hardhat test ./test/SushiswapBank.test.ts",
-    "test:sushi12": "hardhat test ./test/SushiswapPool12Bank.test.ts",
     "test:uni": "hardhat test ./test/UniswapBank.test.js",
     "test:add": "hardhat test ./test/StrategyAddETHOnly.test.js",
     "test:liquidate": "hardhat test ./test/StrategyLiquidate.test.js",
