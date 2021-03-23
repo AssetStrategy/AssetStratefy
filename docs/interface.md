@@ -118,21 +118,6 @@ function recover(address token, address to, uint256 value) external onlyOwner no
 ```
 
 
-### StrategyLiquidate.sol （ETH的清算策略合约）
-
-```js
-// 选择清算策略，触发清算操作，提取流动性代币 tokens 和 ETH，将 tokens 兑换成 ETH，将清算的 ETH 给管理员账户.
-function execute(address /* user */, uint256 /* debt */, bytes calldata data)
-    external
-    payable
-    nonReentrant
-
-// 恢复意外发送到此智能合约的ERC20代币 （管理员操作）
-function recover(address token, address to, uint256 value) external onlyOwner nonReentrant
-```
-
-
-
 ### UniswapGoblin.sol （挖矿清算的内部操作合约）
 
 ```js
