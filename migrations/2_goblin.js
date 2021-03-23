@@ -11,7 +11,7 @@ const StakingRewards = artifacts.require('StakingRewards');
 const UniswapGoblin = artifacts.require('UniswapGoblin');
 
 module.exports = function (deployer, network, [creator]) {
-  if (network !== 'kovan') return;
+  if (network !== 'kovan' && network !== 'ropsten') return;
 
   deployer.then(async () => {
     const router = await UniswapV2Router02.at('0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D');

@@ -9,7 +9,9 @@
     "test:twoside": "hardhat test ./test/StrategyAddTwoSidesOptimal.test.js",
     "test:router": "hardhat test ./test/IbETHRouter.test.ts",
     "test": "hardhat test",
+    "deploy:development": "truffle migrate --network development",
     "deploy:kovan": "truffle migrate --network kovan",
+    "deploy:ropsten": "truffle migrate --network ropsten",
     "coverage": "solidity-coverage",
     "ganache": "ganache-cli"
   },
